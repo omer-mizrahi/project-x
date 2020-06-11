@@ -1,0 +1,17 @@
+ <div id="box1" class="col-12 col-sm-6 col-lg-4">
+                        <!-- <%- course_data.box1 %> -->
+                        <p>קורס מספר 1 - האקינג</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4" id="box2">
+                        <!-- <%- course_data.box1 %> -->
+                        <p>קורס מספר 1 - האקינג</p>
+
+                    </div>
+                    <div id="box3" class="col-12 col-sm-6 col-lg-4">
+                        <!-- <%- course_data.box1 %> -->
+                        <p>קורס מספר 1 - האקינג</p>
+
+                    </div>
+                    <!-- <div id="box4" class="col-12 col-sm-6 col-lg-3">
+                        <%- course_data.box4 %>
+                    </div> -->

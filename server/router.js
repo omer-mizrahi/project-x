@@ -6,11 +6,13 @@ const Router = app => {
 
     app.get('/leads/:id', async function (req, res) {
         let result = await BL.general.getDefaultCourseValues()
+        result.full_name = `אהלן עומר,`
+        result.details = `בעבר התעניית בקורס הסייבר שלנו וחשבנו להגיד לך שלום ולספר לך`
         res.render('index', result)
 
-        const { id } = req.params
-        let result2 = await BL.general.full_login(id)
-        res.render('index', result)
+        // const { id } = req.params
+        // let result2 = await BL.general.full_login(id)
+        // res.render('index', result)
     });
 
     // app.get('/login/:id?', async (req, res) => {
@@ -23,7 +25,7 @@ const Router = app => {
 
     app.put('/status', async (req, res) => {
         const { body } = req
-        if (!body || !body.person_id || !body.status_id) res.status(400).send({message:'data is null'});
+        if (!body || !body.person_id || !body.status_id) res.status(400).send({ message: 'data is null' });
         result = await BL.general.update_status(body.person_id, body.status_id)
         switch (body.status_id) {
             case "1":

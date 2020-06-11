@@ -171,7 +171,7 @@ p {
   color: #280b39;
   font-weight: 400;
   line-height: 1.9;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 li {
@@ -401,16 +401,17 @@ img.img-syllabus {
 .section_heading {
   position: relative;
   z-index: 1;
-  margin-bottom: 70px;
+  margin-bottom: 10%;
 }
 
 .section_heading_cyber {
   position: relative;
   z-index: 1;
-  padding-top: 30px;
+  padding-top: 68px;
   padding-bottom: 30px;
-  margin-right: 170px;
-  margin-left: 170px;
+  /* margin-right: 170px; */
+  /* margin-left: 170px; */
+  background-color: #f2f4f8;
 }
 @media only screen and (max-width: 767px) {
   .section_heading_cyber {
@@ -443,7 +444,7 @@ img.img-syllabus {
 }
 
 .section_heading p {
-  font-size: 18px;
+  font-size: 21px;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -658,6 +659,7 @@ header {
   .main_header_area {
     height: 70px;
   }
+
   .main_header_area.sticky {
     height: 70px;
   }
@@ -812,7 +814,6 @@ header {
     padding: 0;
     background-attachment: unset;
   }
-  
 
 }
 
@@ -1156,8 +1157,9 @@ header {
 }
 
 .single_benifits p {
-  margin-bottom: 0;
-  margin-top: 15px;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  text-align: center;
 }
 
 .main_features_area .single_benifits {
@@ -2127,7 +2129,6 @@ header {
   left: auto;
 }
 
-
 .thank-you h3,
 .thank-you span {
   font-size: 60px;
@@ -2137,15 +2138,16 @@ header {
   display: none;
 }
 @media only screen and (max-width: 767px) {
-  .price-plan-tag{
+  .price-plan-tag {
     display: none;
   }
+
   .price-plan-tag.hide {
     display: block;
   }
 }
 
-.other-course{
+.other-course {
   color: #250a38;
 }
 
@@ -2161,6 +2163,7 @@ header {
   margin: 10px 0;
   position: relative;
 }
+
 .inputGroup label {
   padding: 12px 80px 12px 10px;
   width: 100%;
@@ -2175,6 +2178,7 @@ header {
   background-color: #616263;
   color: #7dc796;
 }
+
 .inputGroup label:before {
   width: 10px;
   height: 10px;
@@ -2189,6 +2193,7 @@ header {
   opacity: 0;
   z-index: -1;
 }
+
 .inputGroup label:after {
   width: 32px;
   height: 32px;
@@ -2207,17 +2212,21 @@ header {
   cursor: pointer;
   transition: all 200ms ease-in;
 }
+
 .inputGroup input:checked ~ label {
   color: #fff;
 }
+
 .inputGroup input:checked ~ label:before {
   transform: translate(-50%, -50%) scale3d(56, 56, 1);
   opacity: 1;
 }
+
 .inputGroup input:checked ~ label:after {
   background-color: #7dc796;
   border-color: white;
 }
+
 .inputGroup input {
   width: 32px;
   height: 32px;
@@ -2230,14 +2239,105 @@ header {
   cursor: pointer;
   visibility: hidden;
 }
+
 .form {
   padding: 0 16px;
   max-width: 550px;
-  margin: 0px 0 0 0;
+  margin: 0;
   font-size: 18px;
   font-weight: 600;
   line-height: 36px;
 }
+
 .mt-50 {
-  margin-top: 50px
+  margin-top: 50px;
+}
+
+.main_features_area .single_benifits {
+  border-left: 2px solid;
+  border-color: #ffffff;
+  padding-left: 15px;
+}
+
+.lBo {
+  border-left: 2px solid;
+  border-color: #ffffff;
+  padding-left: 15px;
+}
+
+.single_benifits_text {
+  direction: rtl;
+}
+
+.p_r {
+  text-align: right;
+  font-size: 20px;
+  padding-right: 2%;
+}
+
+.h_c {
+  text-align: center;
+}
+
+.single_benifits {
+  margin-bottom: 50px;
+  position: relative;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  z-index: 1;
+}
+
+.mircuz_rl {
+  padding-right: 8%;
+  padding-left: 8%;
+}
+
+.t_course {
+  width: 250px;
+  height: 40px;
+  background-color: white;
+  font-size: 20px;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  border: none;
+  border-radius: 3%;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.times_d {
+  text-align: center;
+  display: grid;
+  padding-top: 5%;
+  padding-right: 2%;
+  padding-bottom: 15%;
+}
+
+.morInfo {
+  background-color: #7a7a7a;
+  color: white;
+  cursor: pointer;
+  width: 250px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  border: none;
+  border-radius: 3%;
+}
+
+.tD {
+  text-decoration: line-through;
+}
+
+.h_course {
+  padding-bottom: 2%;
+}
+
+.way {
+  text-align: center;
+  font-size: 52px;
+  padding-bottom: 6%;
+  color: #7dc796;
+  text-decoration: underline;
 }
